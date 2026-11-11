@@ -1,0 +1,48 @@
+{
+  "Name": "Tyap Lyap",
+  "Version": "2.2.0",
+  "Factory Info": {
+    "Vendor": "Northstar Audio",
+    "URL": "",
+    "E-Mail": "",
+    "Flags": {
+      "Unicode": true,
+      "Classes Discardable": false,
+      "Component Non Discardable": false,
+    },
+  },
+  "Classes": [
+    {
+      "CID": "ABCDEF019182FAEB4E7374724E736678",
+      "Category": "Audio Module Class",
+      "Name": "Tyap Lyap",
+      "Vendor": "Northstar Audio",
+      "Version": "2.2.0",
+      "SDKVersion": "VST 3.8.0",
+      "Sub Categories": [
+        "Fx",
+        "Spatial",
+      ],
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "ABCDEF011234ABCD4E7374724E736678",
+      "Category": "Component Controller Class",
+      "Name": "Tyap Lyap",
+      "Vendor": "Northstar Audio",
+      "Version": "2.2.0",
+      "SDKVersion": "VST 3.8.0",
+      "Sub Categories": [
+        "Fx",
+        "Spatial",
+      ],
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+  ],
+}
