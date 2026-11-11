@@ -15,4 +15,5 @@ C:\Program Files\Common Files\VST3\
 TELEGRAM
 Круглая кнопка в верхней части плагина открывает https://t.me/shur2016.
 
-![Uploading image.png…]()
+<img width="1058" height="790" alt="media_34429e8a16c84770945d86db9728a42e jpg" src="https://github.com/user-attachments/assets/657adc41-5aa5-4cbf-bcf7-a35cc08808ad" />
+
