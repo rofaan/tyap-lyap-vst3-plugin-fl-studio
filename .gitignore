@@ -1,0 +1,17 @@
+/build/
+/build-*/
+/dist-macos/
+/release-*/
+/dist/
+/JUCE-*.zip
+*.exe
+*.pdb
+*.ilk
+*.dmg
+*.pkg
+.DS_Store
+/preview-*
+!/preview-2.2-compact.png
+/INSTALL-*.txt
+!/INSTALL-2.2-RU.txt
+!/INSTALL-MACOS-RU.txt

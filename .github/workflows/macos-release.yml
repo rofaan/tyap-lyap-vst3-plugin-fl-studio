@@ -1,0 +1,42 @@
+name: macOS Universal
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build VST3, AU and packages
+        run: bash scripts/build-macos.sh
+
+      - name: Validate bundles
+        run: |
+          test -d "dist-macos/zip/Tyap Lyap.vst3"
+          test -d "dist-macos/zip/Tyap Lyap.component"
+          test -f "dist-macos/Tyap-Lyap-2.2.0-macOS-Universal.pkg"
+          file "dist-macos/zip/Tyap Lyap.vst3/Contents/MacOS/Tyap Lyap"
+          file "dist-macos/zip/Tyap Lyap.component/Contents/MacOS/Tyap Lyap"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Tyap-Lyap-2.2.0-macOS-Universal
+          path: |
+            dist-macos/Tyap-Lyap-2.2.0-macOS-Universal.pkg
+            dist-macos/Tyap-Lyap-2.2.0-macOS-Universal.zip
+
+      - name: Attach to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist-macos/Tyap-Lyap-2.2.0-macOS-Universal.pkg
+            dist-macos/Tyap-Lyap-2.2.0-macOS-Universal.zip

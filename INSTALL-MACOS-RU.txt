@@ -1,0 +1,29 @@
+ТЯП ЛЯП 2.2 — macOS Universal (Apple Silicon + Intel)
+
+ФОРМАТЫ
+• Audio Unit: Logic Pro, GarageBand и другие AU-хосты.
+• VST3: FL Studio, Ableton Live, Reaper и другие VST3-хосты.
+
+УСТАНОВКА ЧЕРЕЗ PKG
+1. Закройте музыкальную программу.
+2. Откройте Tyap-Lyap-2.2-macOS-Universal.pkg.
+3. Если macOS не разрешает открыть неподписанный пакет, используйте ZIP ниже.
+4. После установки перезапустите программу и выполните повторное сканирование плагинов.
+
+УСТАНОВКА ИЗ ZIP
+Скопируйте папку Tyap Lyap.vst3 в:
+  /Library/Audio/Plug-Ins/VST3/
+
+Скопируйте папку Tyap Lyap.component в:
+  /Library/Audio/Plug-Ins/Components/
+
+Можно установить только нужный формат. Для Logic нужен .component, для FL Studio — .vst3.
+
+ПЕРВОЕ СКАНИРОВАНИЕ
+Logic Pro: перезапустите Logic. При необходимости откройте Plug-in Manager и выполните Reset & Rescan Selection.
+FL Studio: Options → Manage plugins → Find installed plugins.
+
+Кнопка Telegram в верхней панели открывает https://t.me/shur2016.
+
+Сборка универсальная, минимальная версия системы — macOS 11.
+Пакет без Apple Developer ID и нотариального заверения; бинарники имеют ad-hoc подпись.
